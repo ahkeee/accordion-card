@@ -36,10 +36,10 @@ body {
 
 .woman-container {
     position: relative;
-    outline: 1px solid #000;
-    background: url(./images/illustration-woman-online-desktop.svg) no-repeat, url(./images/bg-pattern-desktop.svg) no-repeat;
-    background-position: center right 70px;
-    background-size: 100%;
+    /* outline: 1px solid #000; */
+    background: url(./images/illustration-woman-online-desktop.svg) no-repeat, url(./images/bg-pattern-desktop.svg)no-repeat;
+    background-size: 110%, 230%;
+    background-position: bottom 135px right 30px, bottom -75px right 30px;
     padding-top: 5rem;
     width: 700px;
     height: 550px;
@@ -47,11 +47,37 @@ body {
 }
 
 .box {
-    outline: 1px solid #000;
+    /* outline: 1px solid #000; */
     position: absolute;
-    top: 225px;
-    left: -90px;
+    top: 200px;
+    left: -92px;
 }
+
+.faq-container {
+   /* outline: 1px solid #000; */
+   padding-top: 5.1rem;
+   margin-right: 5rem;
+}
+
+.container {
+    outline: 1px solid #000;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.faq-container > h1 {
+    /* outline: 1px solid #000; */
+    margin-bottom: 2.5rem;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+
 
 
 
