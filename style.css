@@ -26,10 +26,10 @@ body {
 .main-container {
     display: flex;
     /* align-items: center; */
-    gap: 50px;
+    /* gap: 50px; */
     background-color: #fff;
-    width: 950px;
-    height: 550px;
+    width: 75rem;
+    height: 42rem;
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
@@ -38,44 +38,100 @@ body {
     position: relative;
     /* outline: 1px solid #000; */
     background: url(./images/illustration-woman-online-desktop.svg) no-repeat, url(./images/bg-pattern-desktop.svg)no-repeat;
-    background-size: 110%, 230%;
-    background-position: bottom 135px right 30px, bottom -75px right 30px;
+    background-size: 112%, 212%;
+    background-position: bottom 135px right 50px, bottom -120px right 50px;
     padding-top: 5rem;
-    width: 700px;
-    height: 550px;
-    
+    width: 45rem;
+    height: 43rem;
+    padding-right: 22rem;
+}
+
+.woman-container > img {
+    /* outline: 1px solid #000; */
+    width: 240px;
 }
 
 .box {
     /* outline: 1px solid #000; */
     position: absolute;
-    top: 200px;
-    left: -92px;
+    top: 250px;
+    left: -118px;
 }
 
-.faq-container {
-   /* outline: 1px solid #000; */
-   padding-top: 5.1rem;
-   margin-right: 5rem;
-}
 
-.container {
-    outline: 1px solid #000;
-    display: flex;
-    padding-bottom: 2rem;
-}
-
-.faq-container > h1 {
+.accordion > h1 {
     /* outline: 1px solid #000; */
+    font-size: 2rem;
     margin-bottom: 2.5rem;
+    padding-left: 1rem;
 }
 
-button {
-    border: none;
-    background-color: transparent;
+
+/* FAQ Accordion Styles */
+
+.accordion {
+    /* outline: 1px solid #000; */
+    padding-left: 5rem;
+    padding-top: 5rem;
+}
+
+
+.accordion .container {
+    /* outline: 1px solid #000; */
+    position: relative;
+    margin: .9rem .9rem;
+}
+
+.accordion .label {
+    /* outline: 1px solid #000; */
+    position: relative;
+    padding: .4rem 0;
+    font-size: .9rem;
     cursor: pointer;
 }
 
+.accordion .label::before {
+    content: url(./images/icon-arrow-down.svg);
+    position: absolute;
+    right: 140px;
+}
+
+.accordion .label:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.accordion .content {
+    position: relative;
+    height: 0;
+    color: hsl(240, 6%, 50%);
+    font-size: .8rem;
+    text-align: justify;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-right: 10rem; 
+}
+
+.accordion hr {
+    width: 24rem;
+    margin-left: .9rem;
+    border: 1px solid hsl(240, 5%, 91%);
+}
+
+
+/* toggle the container using classname .active */
+
+.accordion .container.active .label {
+    font-weight: 700;
+}
+
+.accordion .container.active .content {
+    height: 35px;
+}
+
+.accordion .container.active .label::before {
+    content: url(./images/icon-arrow-down.svg);
+    transform: rotate(180deg);
+}
 
 
 
